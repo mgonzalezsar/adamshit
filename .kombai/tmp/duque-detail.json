@@ -1,0 +1,29 @@
+{
+  "url": "file:///C:/Users/Adam/OneDrive%20-%20UMH/Escritorio/Universidad/Programa%20web%20chufi/local-duque-tamames.html",
+  "hasPendingAddress": true,
+  "hasMenuProducts": true,
+  "hasTelLink": false,
+  "hasMapsLink": false,
+  "links": [
+    {
+      "text": "SUFI KEBAB",
+      "href": "index.html"
+    },
+    {
+      "text": "← Volver a locales",
+      "href": "index.html"
+    },
+    {
+      "text": "Consulta disponible\n                Ver carta\n              \n              ↗",
+      "href": "carta-duque-tamames.html"
+    },
+    {
+      "text": "Instagram ↗",
+      "href": "https://www.instagram.com/pak_orihuela_kebab/"
+    },
+    {
+      "text": "Elegir otro local",
+      "href": "index.html"
+    }
+  ]
+}

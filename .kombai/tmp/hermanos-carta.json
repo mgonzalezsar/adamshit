@@ -1,0 +1,21 @@
+{
+  "url": "file:///C:/Users/Adam/OneDrive%20-%20UMH/Escritorio/Universidad/Programa%20web%20chufi/carta-hermanos-parras.html",
+  "imageCount": 2,
+  "images": [
+    {
+      "src": "menu chufi.jpeg",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "alt": "Carta de SUFI KEBAB con entrantes, kebabs, especialidades, hamburguesas, pollo a la brasa, bebidas y salsas"
+    },
+    {
+      "src": "menu chufi 2.jpeg",
+      "naturalWidth": 1024,
+      "naturalHeight": 1536,
+      "alt": "Carta de menús SUFI KEBAB con menús de kebab, pollo, pizza, bebidas y postres"
+    }
+  ],
+  "hasOldTemplateText": false,
+  "hasMainHeading": false,
+  "hasPhoneInPage": true
+}

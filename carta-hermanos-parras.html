@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1280" />
+    <meta
+      name="description"
+      content="Carta digital de SUFI KEBAB C. Hermanos Parras: productos, menús y pedido imprimible."
+    />
+    <title>SUFI KEBAB · Carta digital C. Hermanos Parras</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=IBM+Plex+Mono:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="theme.css" />
+    <link rel="stylesheet" href="carta.css" />
+  </head>
+  <body class="carta-page">
+    <header class="carta-header">
+      <div class="sufi-container carta-header__inner">
+        <a class="brand" href="index.html" aria-label="Volver a elegir local">
+          <span class="brand__name">SUFI <span>KEBAB</span></span>
+        </a>
+        <a class="carta-header__back" href="local-hermanos-parras.html">← Volver al local</a>
+      </div>
+    </header>
+
+    <main class="carta-main">
+      <div class="sufi-container">
+        <section class="carta-intro" aria-labelledby="carta-title">
+          <div>
+            <p class="carta-intro__kicker">C. Hermanos Parras · carta digital</p>
+            <h1 id="carta-title" class="display">La carta<br /><span>al fuego.</span></h1>
+          </div>
+          <p class="carta-intro__copy">
+            Selecciona tus productos, revisa el carrito y descarga un pedido para enseñarlo en tienda o enviarlo por mensaje.
+          </p>
+        </section>
+
+        <div class="carta-notice" role="note">
+          <span class="carta-notice__mark" aria-hidden="true">!</span>
+          <p>
+            Nombres, composiciones orientativas y precios transcritos de lo visible en los pósteres facilitados. Confirma ingredientes, alérgenos y disponibilidad exacta en tienda.
+          </p>
+        </div>
+
+        <nav class="category-nav" aria-label="Categorías de la carta">
+          <a href="#productos">Productos</a>
+          <a href="#menus">Menús</a>
+          <a href="#bebidas">Bebidas</a>
+          <a href="#postres">Postres</a>
+        </nav>
+
+        <div class="catalog" data-catalog>
+          <section class="catalog-section" id="productos" data-catalog-section="productos" aria-labelledby="productos-title">
+            <div class="catalog-section__heading">
+              <div>
+                <p class="catalog-section__kicker">Carta principal</p>
+                <h2 id="productos-title" class="display">Productos</h2>
+              </div>
+              <span class="catalog-section__count mono" data-section-count="productos"></span>
+            </div>
+            <div class="catalog-section__content" data-catalog-content="productos"></div>
+          </section>
+
+          <section class="catalog-section" id="menus" data-catalog-section="menus" aria-labelledby="menus-title">
+            <div class="catalog-section__heading">
+              <div>
+                <p class="catalog-section__kicker">Carta de menús</p>
+                <h2 id="menus-title" class="display">Menús</h2>
+              </div>
+              <span class="catalog-section__count mono" data-section-count="menus"></span>
+            </div>
+            <div class="catalog-section__content" data-catalog-content="menus"></div>
+          </section>
+
+          <section class="catalog-section" id="bebidas" data-catalog-section="bebidas" aria-labelledby="bebidas-title">
+            <div class="catalog-section__heading">
+              <div>
+                <p class="catalog-section__kicker">Para acompañar</p>
+                <h2 id="bebidas-title" class="display">Bebidas</h2>
+              </div>
+              <span class="catalog-section__count mono" data-section-count="bebidas"></span>
+            </div>
+            <div class="catalog-section__content" data-catalog-content="bebidas"></div>
+          </section>
+
+          <section class="catalog-section" id="postres" data-catalog-section="postres" aria-labelledby="postres-title">
+            <div class="catalog-section__heading">
+              <div>
+                <p class="catalog-section__kicker">El cierre</p>
+                <h2 id="postres-title" class="display">Postres</h2>
+              </div>
+              <span class="catalog-section__count mono" data-section-count="postres"></span>
+            </div>
+            <div class="catalog-section__content" data-catalog-content="postres"></div>
+          </section>
+        </div>
+
+        <noscript>
+          <p class="noscript-note">Activa JavaScript para ver los productos, añadirlos al carrito y preparar el pedido imprimible.</p>
+        </noscript>
+      </div>
+    </main>
+
+    <button class="cart-fab" id="cart-fab" type="button" aria-controls="cart-panel" aria-expanded="false">
+      <span class="cart-fab__icon" aria-hidden="true">▱</span>
+      <span class="cart-fab__label">Carrito</span>
+      <span class="cart-fab__count" id="cart-count" aria-label="0 productos">0</span>
+      <span class="cart-fab__total" id="cart-fab-total">0,00&nbsp;€</span>
+    </button>
+
+    <aside class="cart-panel" id="cart-panel" aria-labelledby="cart-title" aria-hidden="true">
+      <div class="cart-panel__header">
+        <div>
+          <p class="cart-panel__kicker">Pedido en preparación</p>
+          <h2 id="cart-title" class="display">Tu carrito.</h2>
+        </div>
+        <button class="cart-panel__close" id="cart-close" type="button" aria-label="Cerrar carrito">×</button>
+      </div>
+
+      <div class="cart-items" id="cart-items">
+        <p class="cart-empty" id="cart-empty">Tu carrito está vacío.<br /><span>Añade productos para preparar el pedido.</span></p>
+      </div>
+
+      <div class="cart-panel__footer">
+        <div class="cart-summary">
+          <span>Total del pedido</span>
+          <strong id="cart-total">0,00&nbsp;€</strong>
+        </div>
+        <button class="cart-print" id="cart-print" type="button" disabled>Imprimir pedido</button>
+        <p class="cart-status" id="cart-status" aria-live="polite"></p>
+      </div>
+    </aside>
+
+    <footer class="carta-footer">
+      <div class="sufi-container carta-footer__inner">
+        <p class="footer-copy">SUFI KEBAB · C. Hermanos Parras 10 · Callosa de Segura 03360</p>
+        <nav class="footer-links" aria-label="Enlaces de contacto">
+          <a href="https://www.instagram.com/pak_orihuela_kebab/" target="_blank" rel="noreferrer">Instagram ↗</a>
+          <a href="local-hermanos-parras.html">Volver al local</a>
+        </nav>
+      </div>
+    </footer>
+
+    <script src="vendor/jspdf.umd.min.js" defer></script>
+    <script src="carta-hermanos-parras.js" defer></script>
+  </body>
+</html>

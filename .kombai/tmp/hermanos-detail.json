@@ -1,0 +1,24 @@
+{
+  "url": "file:///C:/Users/Adam/OneDrive%20-%20UMH/Escritorio/Universidad/Programa%20web%20chufi/carta-hermanos-parras.html",
+  "hasAddress": true,
+  "hasPhoneOne": false,
+  "hasPhoneTwo": false,
+  "links": [
+    {
+      "text": "SUFI KEBAB",
+      "href": "index.html"
+    },
+    {
+      "text": "← Volver al local",
+      "href": "local-hermanos-parras.html"
+    },
+    {
+      "text": "Instagram ↗",
+      "href": "https://www.instagram.com/pak_orihuela_kebab/"
+    },
+    {
+      "text": "Volver al local",
+      "href": "local-hermanos-parras.html"
+    }
+  ]
+}
